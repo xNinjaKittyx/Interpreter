@@ -9,7 +9,7 @@ In this current state, it only reads from top to bottom some lines of code.
 Here is the syntax that it is able to understand
 
 display - displays whatever you want. Separate different strings and variables with commas.
-EX: display "The volume of the cylinder is ", 3.14*radius*radius*height;
+EX: display "The volume of the cylinder is ", 3.14 * radius * radius * height;
 
 read - take input. Please take note that this is implicit, and does not require a declaration.
 read radius; //This will initiate the variable radius, and store whatever the user put into it.
