@@ -1,0 +1,32 @@
+
+    display "";
+    display "Want to determine whether n is a prime?";
+    display "What is your value of n this time (n>1)? ";
+
+    read n;
+
+    while (n<2)
+        read n;
+
+    display "*******************************************";
+    display "";
+
+    if (n < 2)
+        primeStatus = 0;
+    else
+	{
+        primeStatus = 1;
+    
+
+    candidate = 2;
+    while (candidate < n)
+        if ( (n%candidate) == 0)
+            primeStatus = 0;
+        candidate = candidate + 1;
+    }
+
+    if (primeStatus == 1)
+    {
+        display n, " is a prime";
+    else
+        display n, "is NOT a prime.";
